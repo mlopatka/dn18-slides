@@ -65,7 +65,6 @@
     
 \begin{document}
 
-
 \begin{frame}
 \frametitle{The Morphology of the Web is Changing!}
 
@@ -77,18 +76,24 @@
 % the story i want to talk about today has to do with its shape and a little bit about the technologies that define that shape
 % One definition of Morphology is "the study of form and structure without consideration of function"
 
+
+% SET THE STAGE!!! make the outline clear from the beginning.
+% I'm going to talk about the changing morphology fo the web, the implications for studying it (and a little bit on using it), and then our approach for carrying out research on the nature, structure, and technology on the Modern web!
+
 \begin{overpic}[width=0.7\textwidth]{morphs.png}
-\put(90, 5){\hfill\textbf{Martin Lopatka}}
-\put(45, -1){\hfill\textbf{Data Scientist/Applied Statistician}} 
+\put(90, 5){\hfill\large{Martin Lopatka}}
+\put(45, -1){\hfill{Data Scientist/Applied Statistician}} 
 \end{overpic}
 
-% So what got me started down this road: well a couple fo years ago, maybe around...  July 6th, 2016... at 11:16am.. Our VP of product Nick Nguyen made a medium post about the state of the web, 
+% So what got me started down this road: well a couple fo years ago, maybe around...  July 6th, 2016... at 11:16am.. Our VP of product Nick Nguyen made a medium post about the state of the web, AT Mozilla (don't use the word here.
 \end{frame}
 
 \begin{frame}
 \frametitle{Disclaimer}
 Martin Lopatka provides this contribution to the Data Natives 2018 conference in a personal capacity. The views expressed are his own and do not necessarily represent the views of Mozilla Corporation or the Mozilla Foundation.
+% FAST!!! don't waste time here!
 
+% maybe skip this part!
 % In addition on a personal note, this talk is not meant to be a vilification of the advertisement industry, or big companies, social media platforms, content publishers, or any other party. But rather, I want to focus on the changing nature fo the Web and what it means for technology and for people.
 \end{frame}
 
@@ -99,8 +104,9 @@ Martin Lopatka provides this contribution to the Data Natives 2018 conference in
 \put(-05,90){\textbf{THE INTERNET 2003}}
 \put(-05,86){\tiny{Barrett Lyon / The Opte Project}}
 \end{overpic}
+% TL'DR on the crawl used in OPte!!!
 % Op-tee project visualization made by a massive crawl fo the web, The colors were based on Class A allocation of IP space to different registrars in the world.
-% This map from opte was generated based on a 2003 crawl of the web a time where there were approximately 30, million TLDs registered.
+% This map from opte was generated based on a 2003 crawl of the web a time where there were approximately 30 million TLDs registered.
 % reported by the Internet Systems Consortium.
 
 % at this time, a large portion of the links on a page were placed there by the content creators. The individuals that 
@@ -115,8 +121,13 @@ Martin Lopatka provides this contribution to the Data Natives 2018 conference in
 \put(-04.5,66){\tiny{Barrett Lyon / The Opte Project}}
 %\blfootnote{Barrett Lyon / The Opte Project}
 \end{overpic}
-% By now the Web includes over 314 Million top level domains registered  
+% By now the Web includes over 314 Million top level domains registered (one order of magnitude)
 % https://www.verisign.com/ annual domain registrar market briefs
+% BLUE - North America (ARIN)
+% GREEN - Europe (RIPE) 
+% PURPLE - Latin America (LACNIC)
+% RED - Asia Pacific (APNIC)
+% ORANGE - Africa (AFRINIC)
 \end{frame}
 }
 
@@ -133,32 +144,43 @@ Martin Lopatka provides this contribution to the Data Natives 2018 conference in
 % Community detection was performed using Louvain Modularity, which groups nodes within a network that are more densely connected to one another than to other nodes. This was performed using third-party resources as the network’s edges; not the hyperlinks
 % Jelmer Neeven, University of Amsterdam.
 
-% In some examples, we observed substantially fewer hyperlinks between pages belonging to separate tracking communities than between pages tracked by a single % source of third-party resources. As the dynamic link generation is intended to keep attention in-ecosystem. This is the first indication 
+% more explicit the linkage was done by third-party resources then Visualization was done with hyperlinking!
+% How the figure on the left was generated.
+
+% In some examples, we observed substantially fewer hyperlinks between pages belonging to separate tracking communities than between pages tracked by a single % source of third-party resources. As the dynamic link generation is intended to keep attention in-ecosystem. This is the first indication of a advertisement network influence. 
+
+% UCOSP: Undergraduate Capstone Open Source Projects 
+
+% Trackers versus Advertisers - make this super clear.
+
+% Here we are talking about the infrastructure!
 \end{frame}
 
 {
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{bg_alt_small-rlogo.png}}%
 \begin{frame}
 \frametitle{How did we get to an ecosystem of silos?}
-%We’ve already made some scary discoveries about the diversity of browsing behaviour. A very early examination of a small group of Firefox users’, who voluntarily shared their browsing history via an opt-in data science program called Firefox Pioneer (I'm happy to talk more about that after the talk).
+%%%%%We’ve already made some scary discoveries about the diversity of browsing behaviour. A very early examination of a small group of Firefox users’, who voluntarily shared their browsing history via an opt-in data science program called Firefox Pioneer (I'll come back to this).
 \begin{itemize}
-\item{40\% of total Web browsing page views can be attributed to only 65 top level domains}
+\item{40\% of total Web browsing page views can be attributed to only 65 top level domains (TLD)}
 \item{Five (TLD+1) sites (Google, Facebook, Amazon, Yahoo, and Reddit) make up 22\% of all traffic
 \footnote{https://medium.com/firefox-context-graph/are-trackers-the-new-backbone-of-the-web-fb800435da15}}
 % Based on Pioneers' actual web browsing behaviour during a fixed length data collection period in 2016.
-\item{Of the 22,310,889 domains processed, 52.63\% (11,742,112) were found to serve ads
+\item{Of the 22,310,889 domains processed, 52.63\% (11,742,112) were found to serve advertisements
 \footnote{https://commecica.com/2018/06/27/web-ad-prevalence/}}
 %In a study performed by "Comme ci comme ca" using the May 2018 batch of common crawl formats and comparing links against the Easylist ruleset file (which is the basis of how the line of Adblock adblocker browser extensions work.
 
+% Here we are talking about the behaviour!
+% Because the Morphology is changing, it becomes increasingly important to discuss the way that that affects traffic, i.e. humans, interacting with the web.
 
-% buisness model does not depend as much on 
+% Content providers are on a different business model. Business model does not depend as much on quality content, but rather engaging content!
 \end{itemize}
 \end{frame}
 }
 
 \begin{frame}
 \frametitle{}
-\epigraph{Social platforms were designed to facilitate; they became attention brokers, they are designed to help companies reach users as these sort of middlemen where they know a ton about you and thats the service they are providing to the advertisers.}{Renee DiResta "The Internet's Original Sin\\ 27-Oct-2018 12:45}
+\epigraph{Social platforms were designed to facilitate; they became attention brokers, they are designed to help companies reach users as these sort of middlemen where they know a ton about you and thats the service they are providing to the advertisers.}{Renee DiResta "The Internet's Original Sin" \\ 27-Oct-2018 12:45}
 % Ads alone aren't a problem, targeting is the problem. Social platforms are designed to collect attention and information in order to sell them to advertisers
 % according to research cited in that talk 60% of people in the US get their news from Facebook. 
 % In order to continue to be effective as an *infrastructure for advertisement* content and social platforms have evolved to maximise sustained engagement. That is a critical terms. Notice that no part of an engagement-based optimisation favours quality, but rather popularity.
@@ -166,10 +188,14 @@ Martin Lopatka provides this contribution to the Data Natives 2018 conference in
 % We will get back to this idea of "random walk models" 
 \end{frame}
 
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{bg_alt_small-rlogo.png}}%
 \begin{frame}
 \frametitle{}
-%in 2018, Mulligan and Griffin, published an essay in the GEORGETOWN LAW TECHNOLOGY REVIEW, explaining the disconnect between peoples expectation of Google and other search providers as stewards of knowledge. And compared these operational assumptions with the algorithmic reality of search ending first page results. 
-The highest trafficked pages on the Web are search engines, Social media platforms, and Commerce platforms
+% The behaviour, fits the ###########################
+% Surprise! The traffic stays on the roads... as is reflected
+% the current top 10 pages on the Web are, in term sof traffic) as reported.
+The highest trafficked pages on the Web\footnote{https://www.alexa.com/topsites; accessed 20-Nov-2018 11:17} are search engines, Social media platforms, and Commerce platforms
 \begin{columns}[T]
   \begin{column}{.5\linewidth}
   \begin{enumerate}
@@ -197,20 +223,48 @@ The highest trafficked pages on the Web are search engines, Social media platfor
 
 %With the exception of Wikipedia, these sites are all designed to maximise time on page. And 
 \end{frame}
+}
+
+\begin{frame}
+\frametitle{The new ecology of outbound links}
+% Zooming back in the *page* level. What are the technical manner in which outbound links come to exist.
+\begin{itemize}
+\item{Retargeting}
+% following a link may lead you back to an unexpected palce
+\item{advertisement}
+% the page area for which links are internal (same TLD), or same network, are largely defined by the parties responsible for that page real-estate.
+\item{realtime bidding}
+% The links surfaced may vary from one page visitor to another, based on estimates of *your* profile and value to advertisers, meaning crawlers will be served a fundamentally different page than real humans.
+\item{social linking}
+% the prevalence of social network linking (and authentication options) mean more roads lead back to [insert silo here]! 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{}
+% These challenges are reinforced by the increasing difficulty of studying the "dynamic" web by crawling, as we see from this quote from a 2017 Forbes article discussing the role of the internet archive and common crawl initiatives in helping us make sense of the Web!
+
+\epigraph{The problem is that the web is no longer built upon the simple premise of a collection of small static HTML and image files served up with a simple tag structure and readily parsed with a few lines of code. Today’s web is richly dynamic, multimedia and increasingly broken into walled gardens and device-specific parallel webs.}{Kalev Leetaru "Are Web Archives Failing The Modern Web: Video, Social Media, Dynamic Pages and The Mobile Web"\\ 24-Feb-2017 22:41}
+\end{frame}
 
 \begin{frame}
 \frametitle{}
 \epigraph{The problem is that the web is no longer built upon the simple premise of a collection of small static HTML and image files served up with a simple tag structure and readily parsed with a few lines of code. Today’s web is richly dynamic, multimedia and increasingly broken into walled gardens and device-specific parallel webs.}{Kalev Leetaru "Are Web Archives Failing The Modern Web: Video, Social Media, Dynamic Pages and The Mobile Web"\\ 24-Feb-2017 22:41}
-% 
 \end{frame}
+
+
 \begin{frame}
-\frametitle{The new ecology of outbound links}
-\begin{itemize}
-\item{Retargeting}
-\item{advertisement}
-\item{realtime bidding}
-\item{social linking}
-\end{itemize}
+\frametitle{Challenges to crawl technology}
+% How do we overcome the challenges to crawlstudies including: 
+% \item{Limited View - the open web makes up less and less of the Web. Content Silos}
+% \item{Dynamic content serving}
+% \item{Walled gardens}
+% While still respecting user privacy and a respectful stance on Data science:
+% And balance our ability to understand the increasingly complex algorithmic generation of outbound links.
+
+% We ask permissions, and we compliment the shortcomings of various data collection strategies.
+Introducing Firefox Pioneer!\footnote{https://medium.com/firefox-context-graph/make-firefox-better-with-pioneer-10c82d0f9301}
 \end{frame}
 
 \begin{frame}
@@ -218,6 +272,12 @@ The highest trafficked pages on the Web are search engines, Social media platfor
 %\epigraph{I can't help but feel nauseous when I am loading independent.co.uk, Firefox literally grinds to a halt because of the extreme amount of tracking requests being logged in the browser console, and a popup shows up and says "We value your privacy"}{motin \\
 %28-Oct-2018 11:37}
 %\blfootnote{https://github.com/motin}
+Comparison fo Javascript execution between two people and a crawler for the same page!
+\end{frame}
+
+\begin{frame}
+\frametitle{Web study stack}
+\includegraphics[width=0.8\textwidth]{steve_slide.png}
 \end{frame}
 
 \begin{frame}
@@ -229,25 +289,11 @@ transparency, technology, education
 % as the sophistication of 
 \end{frame}
 
-\begin{frame}
-\frametitle{Challenges to crawl technology}
-\begin{itemize}
-\item{Limited View - the open web makes up less and less of the Web. Content Silos}
-\item{Dynamic content serving}
-\item{Walled gardens}
-\end{itemize}
-% meaning that web crawls in the future will face the difficulty of increasingly complex algorithmic generation of outbound links.
-% as the sophistication of 
-\end{frame}
-
-
 {
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{bg_last.png}}%
 \begin{frame}
-
 \end{frame}
 }
-
 
 
 
